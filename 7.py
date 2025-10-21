@@ -1,10 +1,13 @@
-рекорды = input().split()
-рекорды = [int(рекорд) for рекорд in рекорды]
+scores = input().split()
 
-лучший_результат = рекорды[0]
+a=int(scores[0])
+b=int(scores[1])
+c=int(scores[2])
 
-for рекорд in рекорды:
-    if рекорд > лучший_результат:
-        лучший_результат = рекорд
+best = a
+if b > best:
+    best = b
+if c > best:
+    best = c
 
-print(лучший_результат)
+print(best)
